@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 100px;
+        width: 100%;
+        border: 2px solid black;
+        margin: auto;
+        padding: auto;
+        display: flex;
+    }
+    #para1{
+        color: red ;
+        background-color: yellow;
+        border: 1px solid black;
+        
+    }
+    .subpara{
+        color: white ;
+        background-color: blue;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;
+        overflow: auto;
+    }
+</style>
+<body>
+    <!-- Write a HTML and CSS code to style a paragraph inside div which contains 5 other paragrapgh.
+        the first paragraph must have background colour yellow and text colour red. The other paragraphs must have 
+    backgorund color blue and text color white. -->
+
+    <div class="container">
+        <p class="mainpara">
+            <p class="subpara" id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis quos voluptates illum nulla commodi temporibus molestiae perferendis odit! Vero.</p>
+            <p class="subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod iusto hic beatae consectetur sit ad a quas odit culpa!</p>
+            <p class="subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod iusto hic beatae consectetur sit ad a quas odit culpa!</p>
+            <p class="subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod iusto hic beatae consectetur sit ad a quas odit culpa!</p>
+            <p class="subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod iusto hic beatae consectetur sit ad a quas odit culpa!</p>
+        </p>
+    </div>
+</body>
+</html>

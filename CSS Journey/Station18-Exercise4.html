@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<style>
+    .container {
+        position: relative;
+        height: 600px;
+        background-color: black;
+    }
+
+    .ball {
+        background-color: white;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: Ballx 5s linear infinite , Bally 1s ease-out infinite alternate;
+    }
+
+    @keyframes Ballx {
+        from{
+            left: 0;
+        }
+        to{
+            left: 100%;
+        }
+    }
+
+    @keyframes Bally {
+        from{
+            bottom: 0;
+        }
+        to{
+            bottom: 100%;
+        }
+    }
+</style>
+
+<body>
+    <!--MAIN TARGET- MAKE A BOUNCING BALL WHICH IS GOING FORWARD
+        EXTRA CURICULAR - MAKE THAT BALL TO BOUNCE BACK TO WHERE IT WAS STARTED -->
+
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Containers{
+        border: 2px solid black;
+        height: 70px;
+        width: 170px;
+        padding: 34px;
+        box-shadow: 5px 15px 5px grey;
+        text-shadow:  1px 2px 2px red;
+        outline: 20px solid red;
+
+        /*
+           Border is created inside the element, where as outline is created outside the element 
+           Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+           Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+           Width: Borders can have varying widths on different sides, outlines have a uniform width.
+           Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot.
+        
+           */
+    }
+
+</style>
+<body>
+    <div id="Box1" class="Containers">Box 1</div>
+</body>
+</html>

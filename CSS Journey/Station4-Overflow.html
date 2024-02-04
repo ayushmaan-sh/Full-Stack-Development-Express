@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+</head>
+<style>
+.container{
+    border: 4px solid black;
+    height: 200px;
+    width: 320px;
+    /* Add a scroll bar, weather overflow happens or not */
+    overflow: scroll;
+    /* Overflow : Auto , represents that if overflow happens then apply scroll bar */
+    overflow: auto;
+    /* no wrap makes the content in on line only */
+    /* white-space: nowrap; */
+    /* ellipsis makes "..." at the last of the text from the front view */
+    /* text-overflow: ellipsis; */
+    /* clip will freez the text and remove the scrollbar, only ocerflow will not happen */
+    overflow: clip; 
+
+}
+</style>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cumque aperiam laboriosam doloribus consequuntur ipsum magni, ullam, repellendus in doloremque eveniet explicabo qui tempora reiciendis id dolorem recusandae adipisci nobis ad quas pariatur odio! Consequuntur iusto voluptates qui voluptate illum sint recusandae maiores debitis rem veniam voluptatum perferendis eius deserunt magnam, suscipit nihil rerum fugit aliquam, eum consequatur omnis ipsam. Velit consequuntur debitis tempore reiciendis. Commodi alias ea sint quia. Molestias, commodi. Explicabo in ullam doloremque eius, corporis tempore tenetur, nisi quam reprehenderit commodi, incidunt obcaecati dicta facere rerum distinctio cumque adipisci sint voluptate? Ipsa dolorem corporis illo atque quisquam!
+    </div>
+</body>
+</html>

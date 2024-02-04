@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in CSS</title>
+</head>
+<style>
+    /* To apply variable in css, we use :root{}. Then inside root, we define our variable name and it's value. */
+    :root{
+        --color: rgb(22, 224, 22);
+        
+    }
+    li{
+        /* We use var() function to use the variable */
+        background-color: var(--color, red);
+        /* In case, suppose "--color" variable is not defined, so it'll pick the value which is written after comma; i.e. red */
+        list-style: none;
+    }
+</style>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>

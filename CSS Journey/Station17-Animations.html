@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations is CSS</title>
+</head>
+<style>
+    .container{
+        background-color: black;
+        border: 3px solid white;
+        height: 300px;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .box{
+         height: 140px;
+         width: 140px;
+         border: 2px solid aqua;
+         background-color: rgb(136, 23, 241);
+         border-radius: 50%;
+         /* animation-name: Box;
+         animation-duration: 1s;
+         animation-iteration-count: infinite;
+         animation-timing-function:ease-in-out;
+         animation-delay: 2s;
+         /* animation-direction: alternate-reverse;
+         animation-play-state: paused; */
+         animation: Box 3s ease-in-out infinite alternate-reverse;   /* Shorthand for animation*/
+    }
+    /* For creating and animation, we use @keyframes and name the animation, like a variable. */
+    @keyframes Box{
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(45deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        75%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        from{
+            background-color: blueviolet;
+            transform: translateX(-100px)
+        }
+        to{
+            background-color: red;
+            transform: translateX(100px)
+        }
+        
+    }
+
+    /* We can use multiplle animations */
+</style>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
