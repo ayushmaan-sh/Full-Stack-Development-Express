@@ -1,0 +1,70 @@
+First we have to know the difference between statically typed & dynamically typed languages.
+
+In statically typed, we determine the type of the variable and we can not change the value afterwards without changing its type. Like in C++, Java, C#
+
+Example : int number = 10;
+          number = "a"        //This is will give an error.
+
+In dynamically typed, we store the value of a variable without defining its type. We can change its data type afterwards also. Like in JavaScript, Python, Ruby
+
+Example : let number = 10;
+          number = "a"         //This will not give an error.
+
+
+We can say that TypeScript is essentially JavaScript with Type Checking
+With TypeScript we explicitly set the type of our variable upon declaration 
+TypeScript is build upon JavaScript
+
+Benefits of TypeScript :
+    - Static typing
+    - Code completion
+    - Refactoring
+    - Shorthand notations
+
+We use JavaScript for small projects and TypeScript for Medium to large projects.
+
+-------------------------------------------------------------------------------------------------------------------
+
+For installing TypeScript, we have to use following commands in terminal:
+    - npm i -g typescript 
+Now the TypeScript packages are successfully installed.
+
+
+
+Now we need the typescript configuration file
+" tsc --init " is the command for installing tsconfig.json file.
+
+This config file will help in determining the errors in the typescript code before compiling.
+This config file have a lots of useful functions also
+
+-------------------------------------------------------------------------------------------------------------------
+
+In TypeScript, we have to define variables by also mentioning the type of value in the variable.
+Example :
+            let age:number = 20;
+                 |    |
+      variable name   data type
+
+If we try to do this : age = 'twenty';      //This will be a error in typescript because we defined age as number
+
+
+The TypeScript file used to make JavaScript easy and non complex, but the execution will be on JavaScript file only, that's why we have to use "tsc index.ts" (TypeScript file name) or just "tsc" to create the JavaScript file which is ready for production.
+
+
+Function defining in TypeScript :
+
+Syntax:
+
+function sum(a:number, b:number):number{
+    return a+b;
+}
+console.log(sum(5+5));
+
+
+Arrow Function : 
+
+const sum = (a:number, b:number):number => {
+    return a+b;
+}
+
+console.log(sum(5+5));
