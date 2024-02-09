@@ -10,7 +10,6 @@ const details = {
     Company: employeeCompany
 };
 console.log(details);
-
 const carName = 'Tesla';
 const carYear = 2015;
 const carModel = 'X';
@@ -20,3 +19,10 @@ const car = {
     model: carModel
 };
 console.log(car);
+
+
+const rectangle = {
+    height: 20,
+    width: 10
+};
+console.log(rectangle);
