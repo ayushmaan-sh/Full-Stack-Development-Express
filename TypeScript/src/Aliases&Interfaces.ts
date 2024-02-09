@@ -56,3 +56,28 @@ const car: CarDetails = {
 }
 console.log(car)
 
+// Interfaces : They are similar to type aliases, except they only apply to object types.
+
+interface Rectangle {
+    height: number,
+    width: number
+}
+
+const rectangle: Rectangle = {
+    height: 20,
+    width: 10
+}
+
+console.log(rectangle)
+
+// Extending Interfaces : It means you are creating a new interface with the same properties as the original, plus something new.
+
+interface ColoredRectangle extends Rectangle {
+    color: string
+}
+
+const colorRectabgle: ColoredRectangle = {
+    height: 20,
+    width: 10,
+    color: 'red'
+}
