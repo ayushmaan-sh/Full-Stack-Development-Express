@@ -8,3 +8,11 @@ console.log(y.length);
     let x = 'Hello TypeScript';
     console.log('Example of force casting : ' + x.length);
 }
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+}
+let obj = new Animal("Dog");
+let dog = obj;
+console.log(dog.name);
