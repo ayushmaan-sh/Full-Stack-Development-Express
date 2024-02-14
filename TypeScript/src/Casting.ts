@@ -19,3 +19,16 @@ console.log((<string>y).length)
     let x = 'Hello TypeScript';
     console.log('Example of force casting : '+((x as unknown)as string).length)
 }
+
+// Type Assertion for User-Defined Types:
+
+class Animal {
+    name: string;
+    constructor(name: string) {
+        this.name = name;
+    }
+}
+
+let obj: any = new Animal("Dog");
+let dog = obj as Animal; // User-defined type assertion
+console.log(dog.name); // Accessing the property of the user-defined type
