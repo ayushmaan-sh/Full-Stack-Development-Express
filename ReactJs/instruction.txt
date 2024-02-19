@@ -1,0 +1,13 @@
+1. cd myapp - To go into the application folder
+
+2. code . - Opening the directory
+
+3. npm start - To start application
+
+
+To enable TypeScript code with react:
+1. we have to use ".tsx" extension.
+
+2. No we have to run "npm install --save-dev @types/react" command
+
+3. Do not forget to enable  "jsx": "react" in tsconfig.json 
